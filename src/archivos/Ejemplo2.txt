@@ -1,0 +1,12 @@
+%¡¿'_^#$
+clase Ejemplo2_ {
+  int NUM1;
+  fl0at Num2:
+  float Num2B
+
+  Num1 = 01;
+  Num2 = 10. + 0.1.1 * 2b;
+
+  write(Num1.5);
+  reader[Num1];
+}

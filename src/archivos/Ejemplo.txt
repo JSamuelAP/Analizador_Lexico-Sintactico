@@ -1,0 +1,10 @@
+class Ejemplo {
+  int Num1;
+  float Num2;
+
+  Num1 = 10 - 0;
+  Num2 = 10 + 0.1 * 2;
+
+  write(Num1 + Num2);
+  read(Num1);
+}

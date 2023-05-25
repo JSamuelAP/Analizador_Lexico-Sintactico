@@ -1,0 +1,27 @@
+programa        -> class id { lista_sent }
+lista_sent      -> sentencia sent_final
+sent_final      -> sentencia sent_final
+sent_final      -> ε
+sentencia       -> tipo lista_id ;
+sentencia       -> id = expresion ;
+sentencia       -> read ( lista_id ) ;
+sentencia       -> write ( lista_expr ) ;
+lista_id        -> id id_final
+id_final        -> , id_final
+id_final        -> ε
+lista_expr      -> expresion lista_exprfinal
+lista_exprfinal -> , expresion lista_exprfinal
+lista_exprfinal -> ε
+expresion       -> expr_arit expr_final
+expr_final      -> operador expr_arit expr_final
+expr_final      -> ε
+expr_arit       -> ( expresion )
+expr_arit       -> id
+expr_arit       -> enteros
+expr_arit       -> reales
+tipo            -> int
+tipo            -> float
+operador        -> +
+operador        -> -
+operador        -> *
+inicio          -> programa
