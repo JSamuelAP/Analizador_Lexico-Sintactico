@@ -9,5 +9,6 @@ public class Main {
     lexico.imprimirArchivo();
     sintactico.imprimirEstructuras();
     sintactico.analizar(sintactico.calcularSimboloInicial(), lexico);
+    lexico.imprimirSimbolos();
   }
 }

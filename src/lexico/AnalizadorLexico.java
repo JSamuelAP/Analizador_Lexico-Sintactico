@@ -33,8 +33,10 @@ public class AnalizadorLexico {
    * Mostrar los identificadores encontrados en el programa
    */
   public void imprimirSimbolos() {
+    simbolos = automata.getSimbolos();
     Nodo<Token> nodoActual = simbolos.getCabeza();
 
+    System.out.println("\nIdentificadores: ");
     while (nodoActual != null) {
       System.out.println(nodoActual.getDato().getLexema());
       nodoActual = nodoActual.getSiguiente();
